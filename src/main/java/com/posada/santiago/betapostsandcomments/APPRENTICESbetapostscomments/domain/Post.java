@@ -5,7 +5,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 import com.posada.santiago.betapostsandcomments.APPRENTICESbetapostscomments.domain.events.FavoriteCommentUpdated;
 import com.posada.santiago.betapostsandcomments.APPRENTICESbetapostscomments.domain.events.FavoritePostUpdated;
 import com.posada.santiago.betapostsandcomments.APPRENTICESbetapostscomments.domain.events.PostCreated;
-import com.posada.santiago.alphapostsandcomments.domain.values.*;
+import com.posada.santiago.betapostsandcomments.APPRENTICESbetapostscomments.domain.values.*;
 import com.posada.santiago.betapostsandcomments.APPRENTICESbetapostscomments.domain.events.CommentAdded;
 
 import java.util.List;

@@ -17,12 +17,12 @@ public class ViewUpdater extends DomainUpdater {
         this.repository = repository;
 
         listen((PostCreated event)->{
-            PostViewModel post = new PostViewModel(event.aggregateRootId(), event.getAuthor(), event.getTitle(), new ArrayList<>(), new ArrayList<>());
+            PostViewModel post = new PostViewModel(event.aggregateRootId(), event.getAuthor(), event.getTitle(), "false", new ArrayList<>());
             repository.savePost(post);
         });
 
         listen((CommentAdded event)->{
-            CommentViewModel comment = new CommentViewModel(event.getId() , event.aggregateRootId(), event.getAuthor(), event.getContent());
+            CommentViewModel comment = new CommentViewModel(event.getId() , event.aggregateRootId(), event.getAuthor(), event.getContent(), "false");
             repository.addComment(comment);
         });
     }

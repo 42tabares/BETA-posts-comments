@@ -8,17 +8,17 @@ public class PostViewModel {
     private String postId;
     private String author;
     private String title;
-    private List<String> tags;
+    private String favorite;
     private List <CommentViewModel> comments;
 
     public PostViewModel() {
     }
 
-    public PostViewModel(String postId, String author, String title, List<String> tags, List<CommentViewModel> comments) {
+    public PostViewModel(String postId, String author, String title, String favorite, List<CommentViewModel> comments) {
         this.postId = postId;
         this.author = author;
         this.title = title;
-        this.tags = tags;
+        this.favorite = favorite;
         this.comments = comments;
     }
 
@@ -38,8 +38,8 @@ public class PostViewModel {
         return title;
     }
 
-    public List<String> getTags() {
-        return tags;
+    public String getFavorite() {
+        return favorite;
     }
 
     public List<CommentViewModel> getComments() {
